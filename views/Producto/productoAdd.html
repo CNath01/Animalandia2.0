@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3377be9db6.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/img/logo.jpg" alt="logo animalandia">
+        </div>
+        <div class="sesion">
+            <img src="../assets/img/golden.jpg" >
+            <span>
+                <strong>Bienvenido</strong><br>usuario
+                <i class=""></i>
+            </span>
+        </div>
+        
+    </header>
+    <section id="dashboard">
+        <article class="menu1">
+            <ul>
+                <li class="item1"><a href="Usuario/usuario.html"><i class="fa-solid fa-user"></i>Usuarios</a></li>
+                <li>Clientes</li>
+                <li>Productos</li>
+                <li>Pedidos</li>
+                <li>Reportes</li>
+            </ul>
+        </article>
+        <article class="contenido">
+            <form action="" method="" class="form-prod"></form>
+            <div class="form-group">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <input type="text" name="descripcion" id="descripcion" class="form-input" placeholder="Ingresa la descripción">
+            </div >
+            <div class="form-group">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="form-input" placeholder="Ingresa el nombre del producto">
+            </div>
+            <div class="form-group">
+                <label for="precio" class="form-label">Precio</label>
+                <input type="number" name="precio" id="precio" class="form-input" placeholder="Ingresa el precio del producto">
+            </div>
+            <div class="form-group">
+                <label for="categoria" class="form-label">Categoria</label>
+                <select name="categoria" id="categoria" class="form-select">
+                    <c:foreach>
+        
+                    </c:foreach>
+                </select>
+            </div>
+        </article>
+    </section>
+
+    
+</body>
+</html>
