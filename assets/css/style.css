@@ -110,8 +110,11 @@ nav{
 .cita{
     background-image: url(../img/fondo.jpg);
     flex-basis: 70%;
-    padding: 30px;
+    padding: 80px;
     
+}
+.cita p{
+    font-size: 14px;
 }
 
 .cita h1{
@@ -250,7 +253,6 @@ footer{
 #banner2 img{
     width: 100%;
 }
-
 #services {
     display: flex;
     padding: 2em;
@@ -261,10 +263,11 @@ footer{
     width: 45%;
     display: flex;
     align-items: center;
-    margin: 0 15px;
+    margin:0 15px;
 }
 
 .img-service{
+    margin-left: 20px;
     margin-right: 1em;
 }
 
@@ -278,10 +281,6 @@ footer{
 
 }
 /* ------------------------ |TIPS|---------------------------*/
-#banner3 img{
-    width: 100%;
-    height: 400px;
-}
 #services1{
     position: relative;
     display: flex;
@@ -317,7 +316,7 @@ footer{
     position: relative;
     width: 100%;
     left: 20%;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 20px;
     opacity: 0;
     margin-right: 1em;
     visibility: hidden;
@@ -332,10 +331,8 @@ footer{
 }
 /*------------------------|CONTACTO|------------------------- */
 .mapa iframe{
-    width:350;
-    height:350;
     border-radius: 50%;
-    border: 10px var(--purple-color);
+    border: 10px;
 }
 #contacto{
     padding: 2rem;
