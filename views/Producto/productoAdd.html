@@ -11,13 +11,17 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../assets/img/logo.jpg" alt="logo animalandia">
+            <img src="../../assets/img/logo.jpg" alt="logo animalandia">
+            <span>
+                <a href="../dashboard.html"><br><strong>Home</strong>
+                <i class="fa-solid fa-arrow-rotate-left icon-g"></i></a>
+            </span>
         </div>
         <div class="sesion">
-            <img src="../assets/img/golden.jpg" >
+            <img src="../../assets/img/golden.jpg" >
             <span>
                 <strong>Bienvenido</strong><br>usuario
-                <i class=""></i>
+                <i class="fa-solid fa-right-from-bracket"></i>
             </span>
         </div>
         
@@ -25,35 +29,47 @@
     <section id="dashboard">
         <article class="menu1">
             <ul>
-                <li class="item1"><a href="Usuario/usuario.html"><i class="fa-solid fa-user"></i>Usuarios</a></li>
-                <li>Clientes</li>
-                <li>Productos</li>
-                <li>Pedidos</li>
-                <li>Reportes</li>
+                <li class="item1"><a href="../Usuario/usuario.html"><i class="fa-solid fa-user"></i>Usuarios</a></li>
+                <li class="item1"><a href="../Cliente/cliente.html"><i class="fa-solid fa-users"></i>Clientes</a></li>
+                <li class="item1"><a href="../Producto/producto.html"><i class="fa-solid fa-tag"></i>Productos</a></li>
+                <li class="item1"><a href="../Pedido/pedido.html"><i class="fa-solid fa-cart-shopping"></i>Pedidos</a></li>
+                <li class="item1"><a href="#"><i class="fa-solid fa-arrow-trend-up"></i>Reportes</a></li>
+                <li class="item1"><a href="../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar Sesion</a></li>
             </ul>
         </article>
         <article class="contenido">
-            <form action="" method="" class="form-prod"></form>
-            <div class="form-group">
-                <label for="descripcion" class="form-label">Descripción</label>
-                <input type="text" name="descripcion" id="descripcion" class="form-input" placeholder="Ingresa la descripción">
-            </div >
-            <div class="form-group">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" name="nombre" id="nombre" class="form-input" placeholder="Ingresa el nombre del producto">
-            </div>
-            <div class="form-group">
-                <label for="precio" class="form-label">Precio</label>
-                <input type="number" name="precio" id="precio" class="form-input" placeholder="Ingresa el precio del producto">
-            </div>
-            <div class="form-group">
-                <label for="categoria" class="form-label">Categoria</label>
-                <select name="categoria" id="categoria" class="form-select">
-                    <c:foreach>
-        
-                    </c:foreach>
-                </select>
-            </div>
+            <form action="" method="" class="form-producto">
+                <div class="form-group">
+                    <label for="descripcion" class="form-label">Descripcion</label>
+                    <input type="text" name="descripcion" id="descripcion" class="form-input" placeholder="Ingrese la descripcion del producto">
+                </div>
+                <div class="form-group">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="descripcion" id="descripcion" class="form-input" placeholder="Ingrese el nombre del producto">
+                </div>
+                <div class="form-group">
+                    <label for="precio" class="form-label">Precio</label>
+                    <input type="number" name="precio" id="precio" class="form-input" placeholder="Ingrese el precio del producto">
+                </div>
+                <div class="form-group">
+                    <label for="categoria" class="form-label">Categoria</label>
+                    <select name="categoria" id="categoria" class="form-select">
+                        <c:forench>
+                            <option value="id">Juguetes</option>
+                        </c:forench>
+                        <c:forench>
+                            <option value="id1">Concentrado</option>
+                        </c:forench>
+                        <c:forench>
+                            <option value="id2">Medicamentos</option>
+                        </c:forench>
+                        <c:forench>
+                            <option value="id3">Accesorios</option>
+                        </c:forench>
+                    </select>
+                </div>
+                <button class="btn-morado">Guardar</button>
+            </form>
         </article>
     </section>
 
